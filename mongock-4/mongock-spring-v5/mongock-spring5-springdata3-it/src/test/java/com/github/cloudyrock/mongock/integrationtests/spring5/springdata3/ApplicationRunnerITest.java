@@ -245,7 +245,7 @@ class ApplicationRunnerITest {
                 .setLegacyMigration(new MongockLegacyMigration(LEGACY_CHANGELOG_COLLECTION_NAME))
                 .buildApplicationRunner();
 
-        for(int i=0 ; i< executions; i++) {
+        for (int i = 0; i < executions; i++) {
             runner.execute();
         }
 
